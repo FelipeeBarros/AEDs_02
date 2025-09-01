@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
-public class Palindromo {
-    public static boolean ehPalindromo(String texto) {
-        int inverso = texto.length() - 1;
-        for (int i = 0; i < texto.length() / 2; i++) {
-            if (texto.charAt(i) != texto.charAt(inverso)) {
+public class Palindromo { 
+    public static boolean ehPalindromo(String texto) { 
+        int inverso = texto.length() - 1; // pega a ultima posicao do texto
+        for (int i = 0; i < texto.length() / 2; i++) { // repeticao ate a metade do texto
+            if (texto.charAt(i) != texto.charAt(inverso)) { // comparacao
                 return false;
             }
             inverso--;
